@@ -13,13 +13,13 @@ public class Scriptfour : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
             TemperatureTest();
 
-        coffeeTemperature -= Time.DeltaTime * 5f;  
+        coffeeTemperature -= Time.deltaTime * 5f;  
     }
 
     void TemperatureTest ()
     {
         // If the coffee's temperature is greater than the hottest drinking temperature...
-        if(CoffeeTemperature > hotLimitTemperature)
+        if(coffeeTemperature > hotLimitTemperature)
         {
             // ...do this.
             print("Coffee is to hot.");
